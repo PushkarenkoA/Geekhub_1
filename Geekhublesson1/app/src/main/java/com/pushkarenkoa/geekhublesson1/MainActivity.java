@@ -1,4 +1,4 @@
-package com.example.myfirstgame;
+package com.pushkarenkoa.geekhublesson1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

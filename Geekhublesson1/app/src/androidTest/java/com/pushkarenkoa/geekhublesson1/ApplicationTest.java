@@ -1,4 +1,4 @@
-package com.example.myfirstgame;
+package com.pushkarenkoa.geekhublesson1;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
