@@ -7,5 +7,23 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style parent="AppTheme.Base" name="AppTheme2"/>
+
+    <!-- Base application theme. -->
+
+
+
+    <style parent="Theme.AppCompat.Light.NoActionBar" name="AppTheme.Base">
+
+    <!-- Customize your theme here. -->
+
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    <item name="colorAccent">@color/colorAccent</item>
+
+</style>
 
 </resources>

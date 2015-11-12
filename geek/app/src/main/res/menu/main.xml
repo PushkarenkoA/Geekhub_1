@@ -8,5 +8,10 @@
         android:orderInCategory="100"
         android:title="@string/search"
         sabd:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/exit"
+        android:title="exit"
+        android:orderInCategory="100"
+        sabd:showAsAction="always"/>
 
 </menu>

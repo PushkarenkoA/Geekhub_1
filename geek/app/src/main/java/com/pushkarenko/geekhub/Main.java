@@ -20,7 +20,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.pushkarenko.geekhub.animator.Anim;
+import com.pushkarenko.geekhub.first.FirstHome;
 import com.pushkarenko.geekhub.fragment.MainActiv;
+import com.pushkarenko.geekhub.screentab.MainActivity;
 
 public class Main extends ActionBarActivity {
 
@@ -49,7 +51,7 @@ public class Main extends ActionBarActivity {
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+
 
         mDrawerToggle = new ActionBarDrawerToggle(
                 this,
@@ -106,9 +108,13 @@ public class Main extends ActionBarActivity {
 
                 Toast.makeText(this, R.string.search, Toast.LENGTH_SHORT).show();
                 return true;
+
+            case R.id.exit: System.exit(1);
+                break;
             default:
                 return super.onOptionsItemSelected(item);
         }
+        return super.onOptionsItemSelected(item);
     }
 
 
@@ -124,22 +130,32 @@ public class Main extends ActionBarActivity {
 
         Fragment fragment = null;
         switch (position) {
+
             case 0:
+                Intent intent = new Intent(this,FirstHome.class);
+                startActivity(intent);
+
+                break;
+            case 1:
               Intent intent1 = new Intent(this,Second.class);
                 startActivity(intent1);
 
                 break;
-            case 1:
+            case 2:
                 Intent intent2 = new Intent(this,Third.class);
                 startActivity(intent2);
                 break;
-            case 2:
+            case 3:
                 Intent intent3 = new Intent(this,MainActiv.class);
                 startActivity(intent3);
                 break;
-            case 3:
+            case 4:
                 Intent intent4 = new Intent(this, Anim.class);
                 startActivity(intent4);
+                break;
+            case 5:
+                Intent intent5 = new Intent(this, MainActivity.class);
+                startActivity(intent5);
             default:
 
                 break;
